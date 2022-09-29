@@ -2,9 +2,10 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor HDMI-1 -d 1 3 5
-bspc monitor HDMI-2 -d 2 4 6
+bspc monitor HDMI-1 -d 1 2   
+bspc monitor HDMI-2 -d 3 4 
 
+$HOME/.config/polybar/launch.sh
 
 bspc config normal_border_color "#374c6f"
 bspc config focused_border_color "#ca356e"
@@ -15,5 +16,4 @@ bspc config window_gap		6
 bspc config split_ratio          0.50
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
-
 
