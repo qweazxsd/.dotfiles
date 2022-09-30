@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-	dmenu_run
+	~/.config/rofi/launchers/type-7/launcher.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -26,8 +26,8 @@ super + f
 #
 
 # quit/restart bspwm
-super + alt + {q,r}
-	bspc {quit,wm -r}
+super + {_,shift + }q
+	bspc {wm -r,quit}
 
 # close and kill
 super + {_,shift + }w
