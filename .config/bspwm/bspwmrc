@@ -2,8 +2,8 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor HDMI-1 -d 1 2   
-bspc monitor HDMI-2 -d 3 4 
+bspc monitor HDMI-1 -d 1 2 3 
+bspc monitor HDMI-2 -d 4 5 6
 
 $HOME/.config/polybar/launch.sh
 
