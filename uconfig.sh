@@ -82,6 +82,27 @@ if [[ $POLYBAR_PATH ]]; then
 fi
 
 
+# rofi 
+
+ROFI_PATH=~/.config/rofi/config.rasi
+ROFI_PATH_BACKUP=~/.dotfiles/.config/rofi
+
+if [[ $ROFI_PATH ]]; then
+	cp $ROFI_PATH $ROFI_PATH_BACKUP
+	echo $ROFI_PATH '->' $ROFI_PATH_BACKUP
+fi
+
+
+# sound control 
+
+SOUND_PATH=~/.config/soundcontrol.sh
+SOUND_PATH_BACKUP=~/.dotfiles/.config
+
+if [[ $SOUND_PATH ]]; then
+	cp $SOUND_PATH $SOUND_PATH_BACKUP
+	echo $SOUND_PATH '->' $SOUND_PATH_BACKUP
+fi
+
 # push changes
 git -C ~/.dotfiles add .
 git -C ~/.dotfiles commit -m 'Upload'

@@ -1,4 +1,16 @@
 #
+# Volume Control
+#
+XF86AudioRaiseVolume
+	amixer set Master 5%+
+
+XF86AudioLowerVolume
+	amixer set Master 5%-
+
+XF86AudioMute
+	~/.config/soundcontrol.sh	
+
+#
 # wm independent hotkeys
 #
 
@@ -8,7 +20,10 @@ super + Return
 
 # program launcher
 super + @space
-	~/.config/rofi/launchers/type-7/launcher.sh
+	rofi -show drun
+
+alt + Tab
+	rofi -show window
 
 # make sxhkd reload its configuration files:
 super + Escape
