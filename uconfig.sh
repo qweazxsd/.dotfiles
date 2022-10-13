@@ -103,31 +103,46 @@ if [[ $SOUND_PATH ]]; then
 	echo $SOUND_PATH '->' $SOUND_PATH_BACKUP
 fi
 
+# neovim 
+
+NVIM0_PATH=~/.config/nvim/init.vim
+NVIM0_PATH_BACKUP=~/.dotfiles/.config/nvim
+
+if [[ $NVIM0_PATH ]]; then
+	cp $NVIM0_PATH $NVIM0_PATH_BACKUP
+	echo $NVIM0_PATH '->' $NVIM0_PATH_BACKUP
+fi
+
+NVIM1_PATH=~/.config/nvim/autoload/plug.vim
+NVIM1_PATH_BACKUP=~/.dotfiles/.config/nvim/autoload
+
+if [[ $NVIM1_PATH ]]; then
+	cp $NVIM1_PATH $NVIM1_PATH_BACKUP
+echo $NVIM1_PATH '->' $NVIM1_PATH_BACKUP
+fi
+
+NVIM2_PATH=~/.config/nvim/vim-plug/plugins.vim
+NVIM2_PATH_BACKUP=~/.dotfiles/.config/nvim/vim-plug
+
+if [[ $NVIM2_PATH ]]; then
+	cp $NVIM2_PATH $NVIM2_PATH_BACKUP
+echo $NVIM2_PATH '->' $NVIM2_PATH_BACKUP
+fi
+
+
+# zathura 
+
+ZATHURA_PATH=~/.config/zathura/zathurarc
+ZATHURA_PATH_BACKUP=~/.dotfiles/.config/zathura
+
+if [[ $ZATHURA_PATH ]]; then
+	cp $ZATHURA_PATH $ZATHURA_PATH_BACKUP
+	echo $ZATHURA_PATH '->' $ZATHURA_PATH_BACKUP
+fi
+
+
+
 # push changes
 git -C ~/.dotfiles add .
 git -C ~/.dotfiles commit -m 'Upload'
 git -C ~/.dotfiles push -u origin main
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

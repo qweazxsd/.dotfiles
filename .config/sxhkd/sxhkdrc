@@ -1,4 +1,3 @@
-#
 # Volume Control
 #
 XF86AudioRaiseVolume
@@ -26,8 +25,11 @@ alt + Tab
 	rofi -show window
 
 # make sxhkd reload its configuration files:
-super + Escape
+super + r
 	pkill -USR1 -x sxhkd
+
+super + Escape
+	~/.config/rofi/powermenu.sh
 
 #
 # Programs Shortcuts

@@ -1,0 +1,6 @@
+set selection-clipboard clipboard
+set adjust-open width
+#set zoom-min 225 
+
+map <C-k> zoom in
+map <C-j> zoom out

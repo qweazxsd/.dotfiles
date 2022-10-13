@@ -20,7 +20,11 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# Aliases
 alias uconf="~/.dotfiles/uconfig.sh"
+alias nv="nvim"
+alias p="sudo pacman"
+
 
 # theme/plugins
 source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
