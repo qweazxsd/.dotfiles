@@ -24,6 +24,7 @@ compinit
 alias uconf="~/.dotfiles/uconfig.sh"
 alias nv="nvim"
 alias p="sudo pacman"
+alias ls="ls --color=auto"
 
 
 # theme/plugins
