@@ -130,6 +130,14 @@ echo $NVIM2_PATH '->' $NVIM2_PATH_BACKUP
 fi
 
 
+NVIM3_PATH=~/.config/nvim/UltiSnips/*
+NVIM3_PATH_BACKUP=~/.dotfiles/.config/UltiSnips
+
+if [[ $NVIM3_PATH ]]; then
+	cp -r $NVIM3_PATH $NVIM3_PATH_BACKUP
+	echo $NVIM3_PATH '->' $NVIM3_PATH_BACKUP
+fi
+
 # zathura 
 
 ZATHURA_PATH=~/.config/zathura/zathurarc

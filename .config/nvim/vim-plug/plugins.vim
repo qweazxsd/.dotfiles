@@ -16,5 +16,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     " VimTex
     Plug 'lervag/vimtex'
+    " UltiSnips 
+    Plug 'SirVer/ultisnips'
 
 call plug#end()

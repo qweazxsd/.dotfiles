@@ -1,0 +1,11 @@
+culmus
+lyx
+picom-git
+polybar-spotify-module
+spotify
+stremio
+texlive-culmus
+texlive-full
+zsh-autosuggestions-git
+zsh-syntax-highlighting-git
+zsh-theme-powerlevel10k-git
