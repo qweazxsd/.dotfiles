@@ -1,0 +1,2 @@
+- Save 'pkglist.hook' in /etc/pacman.d/hooks
+- Install packages from a list:		pacman -S --needed - < pkglist.txt
