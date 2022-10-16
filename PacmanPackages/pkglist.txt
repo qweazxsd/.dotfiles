@@ -28,6 +28,7 @@ pkgconf
 plocate
 reflector
 rofi
+steam
 terminus-font
 tree
 unzip
