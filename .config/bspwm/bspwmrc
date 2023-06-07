@@ -21,3 +21,7 @@ bspc config single_monocle			true
 # Rules
 
 bspc rule -a Zathura desktop='^4' follow=on state=tiled
+bspc rule -a NN desktop=^4 follow=on focus=on
+bspc rule -a matplotlib desktop='^4' follow=on state=tiled
+bspc rule -a zoom follow=on state=float
+

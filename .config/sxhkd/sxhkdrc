@@ -9,6 +9,9 @@ XF86AudioLowerVolume
 XF86AudioMute
 	~/.config/soundcontrol.sh	
 
+# ScreenShot
+Print
+    scrot ~/Pictures/Screenshots/%T-%d-%m-%Y-screenshot.png
 #
 # wm independent hotkeys
 #
